@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/564x/3d/de/4c/3dde4cc8642f9b8bde9cf8782f72b49d.jpg");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Montserrat", sans-serif; 
+    overflow: hidden;
+}
+
+.content-area{
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin: 10% ;
+    box-shadow: 0 0 40px rgb(3, 48, 48);
+    display: flex;
+    position: relative;
+    padding: 100px;
+}
+
+h3{
+    font-weight: 300;
+    font-size: smaller;
+    border-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+@keyframes slideup {
+    from{transform: translateY(400%);
+        opacity: 100%;}
+}
+
+@keyframes grow {
+    0%{opacity: 100%;}
+    50%{transform: scale(1.5,1.5);opacity: 100%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes fadeinout {
+    0%{opacity: 100%;}
+    50%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+@keyframes fadein {
+    0%{opacity: 0%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}    
+}
+
+.content-area .greet{
+    position: absolute;
+    top:45%;
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    opacity: 0%;
+    animation: slideup 2s, grow 1s, fadeinout 4s;
+}
+
+.content-area .about{
+    align-content: center;
+    animation: fadein 7s;
+    margin: 10px;
+}
+
+h2{
+    padding: 0 0 10px 0;
+}
+
+.borders img{
+    position: relative;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 50px 10px rgb(2, 69, 69);
+    border-radius: 58% 42% 45% 55% / 52% 65% 35% 48% ;
+    animation: fadein 7s;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 0 10px teal;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: white;
+}

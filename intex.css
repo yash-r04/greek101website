@@ -1,0 +1,167 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1,h2,h3{text-wrap: balance;}
+.navigation_elements img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+  color: white;
+}
+
+.navigation_elements {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color:black;
+    color: white; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    height: 50px; 
+    z-index: 1000;
+}
+
+.navigation_elements a:hover{
+    color: coral;
+}
+
+.navigation_elements a:hover a:active{
+    background-color: coral;
+    color: white;
+    height:60px;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation_elements ul.right, 
+    .navigation_elements ul{float: none;}
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    color: white;
+    scroll-snap-align: start;
+    word-wrap: break-word;
+    overflow:auto;
+}
+
+.first{
+    background-image: url("https://i.pinimg.com/564x/5d/db/15/5ddb1513d1733e8b9fc9747aa8c815d3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+h1 {
+    align-self: flex-start; 
+    font-size: 18vh;
+    color: rgb(239, 218, 23);
+}
+
+img{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.second{
+    justify-content: flex-start;
+    align-items:center ;
+    text-align: justify;
+    font-size: 16px; 
+    position: relative; 
+}
+
+.third{position: relative;}
+.third h1{
+    font-size: 5vh;
+    align-self: center;
+    position: relative;
+}
+
+.third p{
+    font-size: small;
+    align-self: self-end;
+    justify-self: flex-start;
+    position: absolute;
+}
+
+.x{
+    max-width: 350px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-family:Georgia;
+    text-transform: capitalize;
+    color: orangered;
+    cursor: pointer;
+    position: relative;
+    
+}
+#three .back{
+    font-size: small;
+}
+
+.front:hover{
+    opacity: 20%;
+    transition: 0.6s ease;
+    z-index: -1;
+}
+.back{position: absolute;
+    top:100px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    translate: -50,-50;
+    left: 50px;
+    justify-self: center;
+    align-self: center;
+    max-width: 200px;
+    opacity: 1; 
+    z-index: -1; 
+}
+
+.fifth h3{
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+.fourth h3{
+    position: relative;
+    top:25vh;
+    justify-content: center;
+    align-items:center;
+    font-weight: 400;
+    text-align: left;
+    right: 10px;
+}
+.fourth{
+    position: relative;
+    overflow: hidden;
+}
+.fourth img{
+    position: absolute;
+    top: 25vh;
+    left:20vh;
+    max-width: 375px;
+    float: left;
+    z-index: -1;
+}
+
+

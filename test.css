@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #000;
+  overflow: scroll;
+} 
+
+section {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  
+}
+
+h1{
+ text-align: center;  
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-weight: 200;
+ color: white;
+ text-transform: capitalize;
+}
+
+.front h1{
+  text-align: left;
+  color: white;
+}
+
+.back h1{
+  font-weight: 500;
+}
+.card{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: lightcoral;  
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  border-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  perspective: 100px;
+  margin: 10px;
+  color: white;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.front{
+  position: relative;
+  grid-area: 1 / 1;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #000;
+  background-size: cover;
+  
+}
+  
+
+
+.back{
+  position: relative;
+  grid-area: 1 / 1;
+  width: 200px;
+  height:200px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: white;
+  text-align: justify;
+  transform: rotateY(180deg);
+  background-size: cover;
+   
+}
+
+#zf{
+  background-image: url("https://i.pinimg.com/736x/51/31/09/513109e8f843e96defc348265cee1716.jpg");
+}
+#zb{
+    background-image:url("https://i.pinimg.com/564x/db/e1/af/dbe1af708ec59cf0d75b9b8169aa23e3.jpg")
+  
+}
+
+#pf{
+    background-image: url("https://i.pinimg.com/474x/1f/ef/6d/1fef6d41e8fb7cd26aab7d1140ee02d2.jpg")   
+}
+
+#pb{
+    background-image: url("https://i.pinimg.com/474x/b3/2f/a7/b32fa79de169a060bb85e3bfc4761417.jpg");
+}
+
+#haf{
+background-image: url("https://i.pinimg.com/564x/ba/e2/27/bae227656f9cf24cb24abe200179a718.jpg");}
+#hab{
+  background-image:url("https://i.pinimg.com/474x/14/51/df/1451df66939addfe1d7c996258ee0803.jpg")}
+
+#hef{
+  background-image: url("https://i.pinimg.com/564x/53/92/b4/5392b47c7183583085977a47af3a05e3.jpg")}
+#heb
+  {
+  background-image:url("https://i.pinimg.com/474x/e2/66/73/e26673cc785ecd96ad951010b182acbb.jpg")
+}
+
+#atf{
+  background-image: url("https://i.pinimg.com/564x/90/c9/52/90c95277ea9b3b740cff9d976b1c132a.jpg");
+}
+#atb{
+  background-image:url("https://i.pinimg.com/474x/26/a8/96/26a8968034b0f7c7388b69fbd23647a6.jpg")
+}
+#atb h1{color: black;}
+
+#apf{
+  background-image: url("https://i.etsystatic.com/11157975/r/il/1c6cb0/3652086369/il_320xN.3652086369_6n3y.jpg");
+}
+#apb{
+   background-image:url("https://i.pinimg.com/474x/b3/07/a6/b307a6135268f16adc88da7a8ea817e7.jpg")
+}
+#apb h1{color: black;}
+
+#df{
+  background-image: url("https://i.pinimg.com/564x/ad/86/0c/ad860c397755ce10e4a2ce9e8a07890d.jpg");
+}
+#db{
+  background-image:url("https://i.pinimg.com/474x/69/63/c5/6963c5b73f90beb19c4fb19374d7bf9e.jpg")
+}
+#db h1{color: black;}
+
+#hepf{
+background-image: url("https://i.pinimg.com/564x/12/44/05/124405fed7e735494f60aa3c1dee1d1d.jpg");}
+#hepb{
+  background-image:url("https://i.pinimg.com/474x/a8/ee/6f/a8ee6f1985f4c17e135c6de14bb5ac8a.jpg")
+}
+#hepb h1{color: black;}
+
+#artf{
+  background-image: url("https://i.pinimg.com/564x/c3/6f/c3/c36fc360425a3b7bce0575c1f4adb539.jpg");
+}
+#artb{
+  background-image:url("https://i.pinimg.com/474x/49/40/0b/49400bdbf6c1fc319490d2cf3511b44c.jpg")
+}
+#artb h1{color: black; font-size: medium;}
+
+#hestiaf{
+  background-image: url("https://i.pinimg.com/474x/92/8e/dc/928edc9775f1911dedef29501604777a.jpg");
+}
+#hestiab{
+  background-image:url("https://i.pinimg.com/474x/e3/ae/be/e3aebe5aef5cdfa588e8c98595d37aab.jpg")
+}
+
+#af{
+  background-image: url("https://i.pinimg.com/564x/f7/a9/0c/f7a90ca010e7b04c3912123727e19ae9.jpg");
+}
+#ab{
+  background-image:url("https://i.pinimg.com/474x/6a/73/48/6a7348920d87e85d1054954feedc7a77.jpg")
+}
+#ab h1{color: black;}
+
+#hermf{
+background-image: url("https://i.pinimg.com/474x/49/a8/10/49a8109f6409f93fe4780e4d73cecc0d.jpg");
+}
+#hermb{
+  background-image:url("https://i.pinimg.com/474x/6b/de/0e/6bde0e4589dab3289461e941149f366a.jpg")
+}
+
+#apollof{
+  background-image: url("https://i.etsystatic.com/11157975/r/il/0a1b7e/3701969839/il_320xN.3701969839_60pu.jpg")}
+#apollob{
+  background-image:url("https://i.pinimg.com/564x/af/e7/d9/afe7d9488ad206eb5f2744868047ff94.jpg")
+  }
+
+#dinof{
+  background-image: url("https://i.etsystatic.com/11157975/r/il/1cde2c/3719787111/il_320xN.3719787111_b33g.jpg")}
+#dinob{
+  background-image:url("https://i.pinimg.com/474x/85/21/4e/85214e67c8c687fb1d7a99d655ed1026.jpg")
+}
+
+#mainf{
+  background-image: url("https://i.etsystatic.com/11157975/r/il/04f514/4607144129/il_320xN.4607144129_6qq8.jpg")}
+#mainb{
+  background-image: url("https://i.etsystatic.com/11157975/r/il/04f514/4607144129/il_320xN.4607144129_6qq8.jpg");
+}
+   

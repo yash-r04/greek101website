@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width , initial scale=1">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>longin2</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url("https://commonera.com/cdn/shop/articles/ancioent_greece.jpg?v=1663596629");
+                font-family: "Montserrat", sans-serif;;           
+                background-size: cover;               
+                color: white; 
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                min-height: 100vh;       
+            }
+            
+            .container{
+                background: transparent;
+                backdrop-filter: blur(10px);
+                width: 600px;
+                height: 200px;
+                border-radius: 20px;
+                position: relative; 
+                box-shadow: 0 0 10px black;
+                       
+            }
+            .container h1{
+                font-size: 50px;
+                text-align: center;
+                text-transform: capitalize;
+                margin: 20px;
+            }
+
+            .container h3{
+                text-align: center;
+                font-weight: 400;
+                margin: 0 0 10px 0;
+            }
+
+            .homebtn{
+                width: 200px;
+                height: 40px;
+                background: transparent;
+                border: none;
+                outline: none;
+                box-shadow: 0 0 10px black;
+                font-size: medium;
+                border-radius: 10px;
+                position: relative;
+                left: 200px;
+                right: 200px;
+            }
+
+            .homebtn a{
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="container">
+        <h1>Successful login!</h1>
+        <h3>please check your email for conformation email</h3>
+        <button type="button" class="homebtn"><a href='index.html'>back to home page</a></button>
+        </div>
+    </body>
+</html>
