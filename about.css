@@ -8,29 +8,33 @@ body{
     background-image: url("https://i.pinimg.com/564x/3d/de/4c/3dde4cc8642f9b8bde9cf8782f72b49d.jpg");
     background-repeat: repeat;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     font-family: "Montserrat", sans-serif; 
     overflow: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 .content-area{
-    width: 80%;
-    height: 80%;
+    width: fit-content;
+    height: fit-content;
     background-color: transparent;
     backdrop-filter: blur(20px);
-    margin: 10% ;
     box-shadow: 0 0 40px rgb(3, 48, 48);
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding: 100px;
+    padding: 5%;
 }
 
 h3{
     font-weight: 300;
-    font-size: smaller;
-    border-bottom: 10px;
-    padding-bottom: 10px;
+    font-size: 1rem;
+    border-bottom: 1%;
+    padding-bottom: 1%;
 }
 
 @keyframes slideup {
@@ -59,9 +63,6 @@ h3{
 .content-area .greet{
     position: absolute;
     top:45%;
-    text-align: center;
-    align-items: center;
-    align-items: center;
     opacity: 0%;
     animation: slideup 2s, grow 1s, fadeinout 4s;
 }
@@ -69,27 +70,47 @@ h3{
 .content-area .about{
     align-content: center;
     animation: fadein 7s;
-    margin: 10px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textsimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h2{
-    padding: 0 0 10px 0;
+    font-size: 1.5rem;
+    padding: 0 0 1% 0;
+}
+
+.borders{
+    width: fit-content;
+    height: fit-content;
+    justify-self: right;
 }
 
 .borders img{
     position: relative;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 25vh;
+    height: 25vh;
     box-shadow: 0 0 50px 10px rgb(2, 69, 69);
     border-radius: 58% 42% 45% 55% / 52% 65% 35% 48% ;
     animation: fadein 7s;
 }
 
 button{
-    width: 150px;
-    height: 50px;
-    padding: 10px;
+    width: 50%;
+    margin-bottom: 2%;
+    height: 15%;
+    padding: 1%;
     border: none;
     outline: none;
     background: transparent;
